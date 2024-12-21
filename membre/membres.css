@@ -1,0 +1,465 @@
+   /*.old-standard-tt-regular {
+        font-family: "Old Standard TT", serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+    
+    .staatliches-regular {
+        font-family: "Staatliches", serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+    .josefin-sans-<uniquifier> {
+        font-family: "Josefin Sans", serif;
+        font-optical-sizing: auto;
+        font-weight: <weight>;
+        font-style: normal;
+    }*/
+    @font-face {
+        font-family: Michella;
+        src: url(/font/milchella.regular.ttf);
+      }
+    :root{
+        --rouge:rgb(104, 4, 4);
+        --beige: rgb(250, 239, 213);
+        --bleu:#4c749f;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        background-color: var(--beige);
+    }
+
+    nav {
+        background-color: var(--beige);
+        font-family: "Staatliches", sans-serif;
+        font-size: 2vw;            
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-height:10vh;
+        position: sticky; 
+        opacity: 0;
+        z-index: 2;
+        transition: all 0.3s;
+    }
+    nav:hover{
+        opacity: 1;
+    }
+    nav a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--rouge);
+        text-decoration: none;
+        width: 25%;
+        padding: 2rem 0;
+        transition: font-size 0.5s;
+    }
+    nav a:hover {
+        font-size: 125%;
+    }
+
+    main {
+        z-index: 1;
+        background-color: var(--beige);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;top: 0;
+    }
+   /* COUV */
+    
+   .couverture{
+    height: 100vh;
+}
+.haut-couv{
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+}
+
+.nom{
+    margin: 0 0 0 2%;
+    width: 30%;
+}
+
+h1{
+    font-family: "Josefin Sans", serif;
+    font-weight: 600;
+    margin: 0 ;
+}
+h1 span{
+    font-variant-caps: small-caps;
+}
+.nom h3{
+    margin: 0;
+    font-family: "Josefin Sans", serif;
+    font-weight: normal;
+}
+
+
+.bas-couv{
+    max-width: 50vw;
+    position: relative; left: 20vw;
+    font-family: "Josefin Sans", serif;
+    font-weight: 300;
+    font-size: 25px;
+}
+    /*FIN COUV*/
+
+.contenu{
+    margin: 0 0 0 20vw;
+    width: 1000px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 23px;
+    font-weight: 300;
+}
+h2{
+    font-family: "Staatliches", serif;
+    font-size: 80px;
+    font-weight: 200;
+    margin: 0;
+    border-bottom: 3px solid rgb(238, 221, 182);
+}
+
+strong{
+    font-weight: 600;
+}
+.detail{
+    display: flex;
+}
+.cadre{
+    margin-top: 50px;
+    background-color:rgb(253, 244, 225);
+    padding: 100px;
+    border-radius: 30px;
+}
+.passions {
+    display: flex;
+}
+.passions p{
+    padding-right: 50px;
+}
+.traits{
+    display: flex;
+    text-align: center;
+}
+
+.trait{
+    width: fit-content;
+    padding: 50px;
+    background-color:rgb(253, 244, 225);
+    border-radius: 30px;
+}
+#mid{
+    margin: 0 25px 0 25px;
+}
+.citation{
+    font-size: 50px;
+    text-align: center;
+    font-family: Michella;
+}
+.citation::before {
+    content: "“";
+    font-size: 200px;
+    font-weight: bold;
+    font-family: "Old Standard TT", serif;
+    position: relative; right:50%;top: 100px;
+    color: rgb(204, 184, 138);
+}
+.citation::after{
+    content: "„";
+    font-weight: bold;
+    font-size: 200px;
+    position: relative; left:50%; top: -200px;
+    font-family: "Old Standard TT", serif;
+    color: rgb(204, 184, 138);
+}
+
+
+.slide-container {
+max-width: 800px;
+position: relative;
+margin: auto;
+margin-top: 50px;
+text-align: center;
+}
+.prev, .next {
+cursor: pointer;
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+width: 60px;
+height: 60px;
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 50%;
+color: rgb(0, 0, 0);
+font-size: 30px;
+background-color: rgba(0,0,0,0);
+transition: background-color 0.6s ease;
+}
+.prev{ left: 15px; }
+.next { right: 15px; }
+.prev:hover, .next:hover {
+background-color: rgb(235, 212, 179);
+}
+
+.slide-index {
+width: 100%;
+color: black;
+font-size: 50px;
+font-family: Michella;
+}
+.slide-img{
+width: 100%;
+height: 300px;
+object-fit: contain;
+object-position: center;
+}
+.slide-dot{ text-align: center; }
+.dot {
+cursor: pointer;
+height: 10px;
+width: 10px;
+margin: 0 2px;
+background-color: #999999;
+border-radius: 50%;
+display: inline-block;
+transition: background-color 0.6s ease;
+}
+.active, .dot:hover { background-color: #111111; }
+.fade {
+animation-name: fade;
+animation-duration: 1s;
+}
+@keyframes fade {
+from {opacity: 0}
+to {opacity: 1}
+}
+
+.ancre{
+text-align: center;
+margin-top: 200px;
+}
+.ancre :hover {
+font-weight: bold;
+text-decoration: underline;
+}
+.ancre a {
+font-family: "Josefin Sans", serif;
+color: black;
+text-decoration: none;
+font-size: 30px;
+}
+.ancre a::before{
+content: '↑';
+padding-right: 10px;
+}
+
+footer {
+    font-family: Michella;
+    padding: 1rem 0;
+    background-color: rgb(104, 4, 4);
+    color: rgb(250, 239, 213);
+    font-size: 20px;
+    text-align: center;
+    margin-top: 200px;
+}
+footer h3{
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.reseau{
+    text-align: center;
+    padding-bottom: 1em;
+}
+.reseau a{
+    font-family: "Josefin Sans", sans-serif;
+    font-variant-caps: all-small-caps;
+    font-weight: 900;
+    text-decoration: none;
+    color: rgb(250, 239, 213);
+    padding: 0 2em;
+}
+.qg{
+    font-weight: bolder;
+    font-variant-caps: small-caps;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 1300px) {
+    main .img-couv {
+        width: 100vw;
+        height: 70vh;
+    }
+
+    nav{
+        opacity: 1;
+        background: #00000000;
+    }
+    nav a{
+        color: var(--beige);
+        font-size: 2.5vw;
+        transition: border 0.3s;
+    }
+
+    nav a:hover{
+        border: 2px var(--beige) solid;
+        font-size: 2.5vw;
+    }
+    .haut-couv {
+        flex-direction: column;
+        text-align: center;
+    }
+   .nom{
+    position: relative;top: -20px;
+    scale: 1.5;
+    margin: 0;
+    width: auto;
+    }
+    
+    .bas-couv {
+        width: 100%;
+        position: relative;left: 0;
+        font-size: 18px;
+        margin: auto;
+        margin-top: 15%;
+    }
+
+    .contenu {
+        width: 90%;
+        margin: 0 auto;
+        font-size: 18px;
+    }
+
+    h2 {
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    html, body{
+        overflow-x: hidden;
+    }
+
+    .haut-couv,
+    .bas-couv,
+    .contenu,
+    .detail,
+    .passions,
+    .traits,
+    .trait,
+    .donlight {
+        display: block;
+        overflow: hidden;
+    }
+    .haut-couv {
+        flex-direction: column;
+        text-align: center;
+    }
+    .img-couv {
+        width: 100%;
+        height: 60vh;
+    }
+    
+    nav {
+        font-size: 5vw;
+        opacity: 1;
+    }
+    .nom{
+        margin: 0;
+        position: absolute;top: 80vh;left: 60vw;
+        width: 25%;
+        text-align: center;
+    } 
+    .nom h1{
+        text-align: center;
+
+    }
+    
+    .bas-couv {
+        font-size: 16px;
+        width: 40%; 
+        margin-left: 25px;
+        margin-top: 10%;
+    }
+    .bas-couv p{
+        text-align: justify;
+        margin: auto;
+    }
+   
+    .detail img{
+        width: 100%;
+        height: auto;
+        padding: 0;
+        margin: 0;
+    }
+    .contenu p {
+        overflow-wrap: break-word;
+        white-space: normal;
+        padding: 10%;
+    }
+    .cadre{
+        padding: 10%;
+    }
+    .cadre p{
+        padding: 0;
+    }
+    .cadre img{
+        width: 100%;
+        height: auto;
+    }
+    nav a {
+        width: 100%;
+        padding: 1rem 0;
+    }
+    h2{
+        margin-left: 20px; 
+        font-size: 40px;
+    }
+   
+    .contenu {
+        width: 100%;
+        margin: 0 auto;
+        font-size: 4vw;
+    }
+
+    
+    .traits{
+        width: 100%;
+    }
+    .trait{
+        margin: auto;
+    }
+ 
+    
+    .citation {
+        position: relative;
+        left: 20vw;
+        width: 50%;
+        font-size: 24px;
+    }
+    .prev{ 
+        left: 15px; 
+        background-color: var(--rouge);
+        color: var(--beige);
+    }
+    .next { 
+        right: 15px; 
+        background-color: var(--rouge);
+        color: var(--beige);
+    }
+    footer{
+        padding: 50px;
+    }
+   
+    .reseau ul{
+        padding: 0;
+        text-align: center;
+    }
+}

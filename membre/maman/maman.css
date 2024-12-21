@@ -1,0 +1,40 @@
+h1{
+    font-size: 4vw;
+    position: relative; top: 55%;
+}
+.nom h3{
+    
+    font-size: 3vw;
+    position: relative; top: 55%;
+}
+.img-couv{
+    background-image: url(/img/maman/couv.png);
+    background-size: cover;
+    background-position: center;
+    width: 70%; 
+}
+
+/*FIN COUV*/
+
+    
+    .detail img{
+        height: 475px;
+        padding: 25px 50px 0 0;
+    }
+    .cadre{
+        margin-top: 50px;
+        background-color:rgb(253, 244, 225);
+        padding: 100px;
+        border-radius: 30px;
+    }
+    .passions {
+        display: flex;
+    }
+    .passions img{
+        height: 275px;
+        margin-top: 25px;
+    }
+    .passions p{
+        padding-right: 50px;
+    }
+    

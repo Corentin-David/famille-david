@@ -1,0 +1,50 @@
+
+    .img-couv{
+        background-image: url(/img/maudé/couv.png);
+        background-size: cover;
+        background-position: center;
+        width: 70%; 
+    }
+
+
+    h1{
+        font-family: "Josefin Sans", serif;
+        font-size: 4vw;
+        font-weight: 600;
+        margin: 0 ;
+        position: relative; top: 70%;
+    }
+    h1 span{
+        font-variant-caps: small-caps;
+    }
+    .nom h3{
+        margin: 0;
+        font-family: "Josefin Sans", serif;
+        font-weight: normal;
+        font-size: 3vw;
+        position: relative; top: 70%;
+    }
+
+    /*FIN COUV*/
+
+
+    
+    .detail img{
+        height: 525px;
+        padding: 25px 50px 0 0;
+    }
+
+    .passions img{
+        height: 525px;
+        margin-top: 25px;
+    }
+
+    .anecdote{
+        display: flex;
+        align-items: center;
+    }
+    .anecdote img{
+        margin-left: 50pxe;
+        width: 300px;
+    }
+   

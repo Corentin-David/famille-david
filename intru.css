@@ -1,0 +1,212 @@
+    /*
+    
+    .staatliches-regular {
+        font-family: "Staatliches", serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+    .josefin-sans-<uniquifier> {
+        font-family: "Josefin Sans", serif;
+        font-optical-sizing: auto;
+        font-weight: <weight>;
+        font-style: normal;
+    }*/
+    @font-face {
+        font-family: Michella;
+        src: url(/font/milchella.regular.ttf);
+      }
+    :root{
+        --rouge:rgb(104, 4, 4);
+        --beige: rgb(250, 239, 213);
+        --bleu:#4c749f;
+    }
+    body{
+        background-color: var(--beige);
+        margin: 0;
+    }
+
+    nav {
+        font-family: "Staatliches", sans-serif;
+        font-style: normal;
+        font-size: 2vw;            
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--beige);
+
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: var(--beige);
+        height: 10vh;
+        z-index: 100;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    nav a {
+        color: var(--rouge);
+        text-decoration: none;
+        width: 25%;
+        text-align: center;
+        padding: 2rem 0;
+        transition: font-size 0.5s;
+        margin: 0 1rem;
+    }
+
+    nav a:hover {
+        font-size: 125%;
+    }
+
+    /*FIN NAV - DEBUT MAIN*/
+    section {
+        scroll-snap-align: start;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+        color: white;
+    }
+
+    main{
+        height: 100vh;
+    }
+    h1{
+        font-family: "Staatliches", sans-serif;
+        margin: 0;
+        font-size: 10vw;
+        height: 10vw;
+        transition: all 0.3s;
+    }
+    h2{
+        font-family: "Staatliches", sans-serif;
+        font-weight: normal;
+        margin: 0;
+        padding: 0;
+        font-size: 2vw;
+        transition: all 0.3s;
+    }
+    h3{
+        font-family: Michella;
+        font-weight: normal;
+        margin: 0;
+        padding: 0;
+        font-size: 1.5vw;
+        transition: all 0.3s;
+    }
+    p{
+        font-family: Michella;
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%; 
+        transition: all 0.3s;
+        font-size: 1.5vw;
+    }
+    .grade{
+        transition: scale 0.3s;
+    }
+    a{
+        text-decoration: none;
+        color: inherit;
+    }
+    a:hover h1, a:hover h2, a:hover h3, a:hover p{
+        opacity: 0.3;
+        scale: 0.8;
+    }
+    a:hover .grade{
+        scale: 1.5;
+    }
+    #val{
+        background-color: var(--beige);
+        color: var(--rouge);
+        margin-top: 10vh;
+        height: 90vh;
+        display: flex;
+        align-items: center;
+    }
+    .val{
+        width: 50vw;
+        text-align: center;
+    }
+
+    .picval{
+        width: 50vw;
+        height: 90vh;
+        background-image: url(img/val/couv.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    #chimene{
+        background-color: var(--rouge);
+        color: var(--beige);
+        height: 100vh;
+        display: flex;
+        align-items: center;
+    }
+    .chimene{
+        text-align: center;
+        width: 50vw;
+    }
+
+    .picchimene {
+        height: 100vh;
+        width: 50vw;
+        background-image: url(img/chimene/couv2.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    #clara{
+        background-color: var(--bleu);
+        color: var(--beige);
+        height: 100vh;
+        display: flex;
+        align-items: center;
+    }
+    .clara{
+        width: 50vw;
+        text-align: center;
+    }
+
+    .picclara {
+        width: 50vw;
+        height: 100vh;
+        background-image: url(img/clara/IMG-20241124-WA0062.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    #thomas{
+        background-color: var(--beige);
+        color: var(--bleu);
+        height: 100vh;
+        display: flex;
+        align-items: center;
+    }
+    .thomas{
+        text-align: center;
+        width: 50vw;
+    }
+
+    .picthomas {
+        height: 100vh;
+        width: 50vw;
+        background-image: url(img/thomas/IMG-20241124-WA0020.jpg);
+        background-size: cover;
+        background-position: top;
+    }
+    #carla{
+        background-color: var(--rouge);
+        color: var(--beige);
+        height: 100vh;
+        display: flex;
+        align-items: center;
+    }
+    .carla{
+        width: 50vw;
+        text-align: center;
+    }
+    .piccarla{
+        width: 50vw;
+        height: 100vh;
+        background-image: url(img/carla/couv.jpg);
+        background-size: cover;
+    }

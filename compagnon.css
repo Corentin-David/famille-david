@@ -1,0 +1,123 @@
+    /*
+    .staatliches-regular {
+        font-family: "Staatliches", serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+    .josefin-sans-<uniquifier> {
+        font-family: "Josefin Sans", serif;
+        font-optical-sizing: auto;
+        font-weight: <weight>;
+        font-style: normal;
+    }*/
+
+
+    :root{
+        --rouge:rgb(104, 4, 4);
+        --beige: rgb(250, 239, 213);
+        --bleu:#4c749f;
+    }
+    html, body{
+        overflow-x: hidden;
+        box-sizing: border-box;
+        margin: 0;
+    }
+    nav {
+        background: linear-gradient(var(--beige), rgba(250, 239, 213, 0) );
+        font-family: "Staatliches", sans-serif;
+        font-style: normal;
+        font-size: 2vw;            
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-height:10vh;
+        width: 100VW;
+        position: absolute;
+        }
+
+    nav a {
+        color: var(--rouge);
+        text-decoration: none;
+        width: 25%;
+        text-align: center;
+        padding: 2rem 0;
+        transition: font-size 0.5s;
+        }
+
+    nav a:hover {
+        font-size: 125%;
+        }
+
+        .lucky{
+            background-image: url(img/lucky/20210720_212018.jpg);
+            background-size: 60vh;
+            background-position: top ;
+        }
+        .ben{
+            background-image: url(img/ben/Snapchat-571868480.jpg);
+            background-size: 110vh;
+            background-position:center;
+        }
+        .nutsy{
+            background-image: url(img/nutsy/20200208_091746.jpg);
+            background-size: 100vh;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .ares{
+            background-image: url(img/ares/IMG-20241124-WA0041.jpg);
+            background-size: cover;
+            background-position: top;
+        }    
+        .mouki{
+            background-image: url(img/mouki/35939ef6-8d75-45f4-9ac8-9200f9cf094a.jpg);
+            background-size: cover;
+            background-position: top;
+        }
+        .menu{
+            height: 100vh;
+            display: flex;
+            overflow: hidden;
+        }
+        .menu a{
+            width: 20vw;
+            transition: zoom 0.5s;
+            text-decoration: none;
+        }
+        
+        .menu a div{
+            font-family: "Staatliches", sans-serif;
+            background-color: rgba(250, 239, 213, 0.575);
+            height: 100vh;
+            margin-top: 100vh;
+            transition: all 0.7s;
+            text-align: center;
+        }
+        h1{
+            margin: 0;
+            font-size: 15vh;
+            color: var(--bleu);
+            position: relative;top: 35vh;
+            text-shadow: 5px 0 var(--rouge), 0 2px var(--rouge), 0 -2px #fff,
+            1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+        }
+        h2{
+            position: relative;top: 35vh;
+            margin: 0;
+            font-size: 5vh;
+            color: var(--beige);
+            text-shadow: 2px 0 var(--rouge), 0 2px var(--rouge), 0 -2px #fff,
+               1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+        }
+        h3{
+            position: relative;top: 35vh;
+            margin: 0;
+            font-size: 3vh;
+            color: var(--rouge);
+            text-shadow: 2px 0 var(--beige), 0 2px var(--beige), 0 -2px #fff,
+               1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+        }
+        .menu a:hover div{
+            margin-top: 0;
+        }
+        

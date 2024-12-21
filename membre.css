@@ -1,0 +1,253 @@
+       
+    /*.staatliches-regular {
+        font-family: "Staatliches", serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+    .josefin-sans {
+        font-family: "Josefin Sans", serif;
+        font-optical-sizing: auto;
+        font-weight: <weight>;
+        font-style: normal;
+    }*/  
+    @font-face {
+        font-family: Michella;
+        src: url(/font/milchella.regular.ttf);
+      }
+      
+
+    :root{
+        --rouge:rgb(104, 4, 4);
+        --beige: rgb(250, 239, 213);
+        --bleu:#4c749f;
+    }
+    body{
+        background-color: var(--beige);
+        margin: 0;
+    }
+
+    nav {
+        font-family: "Staatliches", sans-serif;
+        font-style: normal;
+        font-size: 2vw;            
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--beige);
+
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: var(--beige);
+        height: 10vh;
+        z-index: 100;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    nav a {
+        color: var(--rouge);
+        text-decoration: none;
+        width: 25%;
+        text-align: center;
+        padding: 2rem 0;
+        transition: font-size 0.5s;
+        margin: 0 1rem;
+    }
+
+    nav a:hover {
+        font-size: 125%;
+    }
+
+    /*FIN NAV - DEBUT MAIN*/
+    section {
+        scroll-snap-align: start;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+        color: white;
+    }
+
+    main{
+        height: 100vh;
+    }
+    h1{
+        font-family: "Staatliches", sans-serif;
+        margin: 0;
+        font-size: 10vw;
+        height: 10vw;
+        transition: all 0.3s;
+    }
+    h2{
+        font-family: "Staatliches", sans-serif;
+        font-weight: normal;
+        margin: 0;
+        padding: 0;
+        font-size: 2vw;
+        transition: all 0.3s;
+    }
+    h3{
+        font-family: Michella;
+        font-weight: normal;
+        margin: 0;
+        padding: 0;
+        font-size: 1.5vw;
+        transition: all 0.3s;
+    }
+    p{
+        font-family: Michella;
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%; 
+        transition: all 0.3s;
+        font-size: 1.5vw;
+    }
+    a{
+        text-decoration: none;
+        color: inherit;
+    }
+    .grade{
+        transition: scale 0.3s;
+    }
+    a:hover h1, a:hover h2, a:hover h3, a:hover p{
+        opacity: 0.3;
+        scale: 0.8;
+    }
+
+    a:hover .grade{
+        scale: 1.5;
+    }
+
+    #papa{
+        background-color: var(--beige);
+        color: var(--rouge);
+        margin-top: 10vh;
+        height: 90vh;
+        display: flex;
+        align-items: center;
+    }
+    .papa{
+        width: 50vw;
+        text-align: center;
+    }
+
+    .picpapa{
+        width: 50vw;
+        height: 90vh;
+        background-image: url(img/papa/echarpe.jpg);
+        background-size: 100%;
+        background-position: center;
+    }
+    #maman{
+        background-color: var(--rouge);
+        color: var(--beige);
+        height: 100vh;
+        display: flex;
+        align-items: center;
+    }
+    .maman{
+        text-align: center;
+        width: 50vw;
+    }
+
+    .picmaman {
+        height: 100vh;
+        width: 50vw;
+        background-image: url(img/maman/mamanbougie.jpg);
+        background-size: cover;
+        background-position: bottom;
+    }
+    #max{
+        background-color: var(--bleu);
+        color: var(--beige);
+        height: 100vh;
+        display: flex;
+        align-items: center;
+    }
+    .max{
+        width: 50vw;
+        text-align: center;
+    }
+
+    .picmax {
+        width: 50vw;
+        height: 100vh;
+        background-image: url(img/max/pilote.png);
+        background-size: cover;
+    }
+    #maude{
+        background-color: var(--beige);
+        color: var(--bleu);
+        height: 100vh;
+        display: flex;
+        align-items: center;
+    }
+    .maude{
+        text-align: center;
+        width: 50vw;
+    }
+
+    .picmaude {
+        height: 100vh;
+        width: 50vw;
+        background-image: url(img/maudé/IMG-20220420-WA0001.jpg);
+        background-size: cover;
+        background-position: top;
+    }
+    #dona{
+        background-color: var(--rouge);
+        color: var(--beige);
+        height: 100vh;
+        display: flex;
+        align-items: center;
+    }
+    .dona{
+        width: 50vw;
+        text-align: center;
+    }
+    .picdona{
+        width: 50vw;
+        height: 100vh;
+        background-image: url(img/dona/bbq.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    #anna{
+        background-color: var(--bleu);
+        color: var(--beige);
+        height: 100vh;
+        display: flex;
+        align-items: center;
+    }
+    .anna{
+        text-align: center;
+        width: 50vw;
+    }
+
+    .picanna {
+        height: 100vh;
+        width: 50vw;
+        background-image: url(img/nanou/photo.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    #coco{
+        background-color: var(--beige);
+        color: var(--bleu);
+        height: 100vh;
+        display: flex;
+        align-items: center;
+    }
+    .coco{
+        width: 50vw;
+        text-align: center;
+    }
+
+    .piccoco{
+        width: 50vw;
+        height: 100vh;
+        background-image: url(img/coco/couv.jpg);
+        background-size: 150%;
+        background-position: center;
+    }

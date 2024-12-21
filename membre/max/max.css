@@ -1,0 +1,43 @@
+
+    .img-couv{
+        background-image: url(/img/max/pilotesourit1.png);
+        background-size: cover;
+        background-position: center;
+        width: 70%; 
+    }
+
+    h1{
+        font-size: 5vw;
+        position: relative; top: 60%;
+    }
+    .nom h3{
+        font-size: 3vw;
+        position: relative; top: 60%;
+    }
+    .nom h3 img{
+        width: 3vw;
+        transform: rotate(180deg);
+    }
+
+    .bas-couv{
+        max-width: 50vw;
+        position: relative; left: 20vw;
+        font-family: "Josefin Sans", serif;
+        font-weight: 300;
+        font-size: 1.7vw;
+    }
+
+    /*FIN COUV*/
+    
+   
+    .detail img{
+        height: 600px;
+        padding: 25px 50px 0 0;
+    }
+
+    .passions img{
+        height: 425px;
+        margin-top: 25px;
+    }
+
+  

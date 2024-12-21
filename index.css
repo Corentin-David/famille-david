@@ -1,0 +1,327 @@
+/*.old-standard-tt-regular {
+    font-family: "Old Standard TT", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .staatliches-regular {
+    font-family: "Staatliches", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .josefin-sans-<uniquifier> {
+    font-family: "Josefin Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+  }*/
+  @font-face {
+    font-family: Michella;
+    src: url(/font/milchella.regular.ttf);
+  }
+ 
+        :root{
+            --rouge:rgb(104, 4, 4);
+            --beige: rgb(250, 239, 213);
+            --bleu:#4c749f;
+        }
+        
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url(img/groupe/famillemariagemaude1.jpg);
+            background-position: top;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        .menu-toggle {
+            display: none;
+          }
+          .close-menu {
+            display: none;
+          }
+        nav {
+            font-family: "Staatliches", sans-serif;
+            font-size: 2vw;            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-height:1px;
+            position: relative; top: 5vh;
+        }
+        nav a {
+            display: flex;
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            align-items: center;
+            justify-content: center;
+            width: 25%;
+            padding: 2rem 0;
+            transition: font-size 0.5s;
+        }
+    
+        nav a:hover {
+            font-size: 125%;
+        }
+        main {
+            margin-top: 100vh;
+            background-color: rgb(250, 239, 213);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .couv-famille{
+            display: none;
+        }
+        h1{
+            font-family: "Staatliches", sans-serif;
+            font-size: 75px;
+            font-weight: lighter;
+            border-bottom: 3px solid var(--bleu);
+        }
+        .section-text h3{
+            text-align: center;
+            font-size: 150px;
+            font-family: Michella;
+            color: rgb(163, 0, 0);
+            font-weight: 800;
+            font-variant-caps: small-caps;
+        }
+        .section-text {
+            background-color: rgba(250, 239, 213, 0);
+            width: 900px;
+            margin: 10vh 0;
+            padding: 10px 100px 50px;
+            border-radius: 1;
+        }
+        .section-text h2{
+            font-family: "Staatliches", sans-serif;
+            font-variant-caps: all-small-caps;
+            font-size: 75px;
+            font-weight: lighter;
+            border-bottom: 3px solid var(--bleu);
+        }
+        main p{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: 300;
+            font-size: 120%;
+            text-align: left;
+        }
+        .parent{
+            display: flex;
+        }
+        .parent p{
+            padding-left: 50px;
+        }
+        .parent span{
+            width: 50%;
+        }
+        .parent div{
+            background-image: url(img/papa/mariagemaman.jpg);
+            background-size: 100%;
+            background-position: center;
+            height: 300px;
+            border-radius: 50px;
+        }
+        .fraterie{
+            display: flex;
+            align-items: center;
+        }
+        .fraterie p{
+            padding-right: 50px;
+        }
+        .fraterie span{
+            width: 50%;
+        }
+        .fraterie div{
+            background-image: url(img/groupe/FRATERIE\ JEUNE.jpg);
+            background-size: cover;
+            width: 100%;
+            height: 300px;
+            border-radius: 50px 50px 0 0;
+        }
+        .alerte{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: 800;
+            font-style: italic;
+            font-size: 120%;
+            text-align: left;
+        }
+        figure{
+            margin: 0;
+        }
+        figcaption{
+            color: var(--beige);
+            font-family: Michella;
+            font-weight: 400;
+            font-size: 120%;
+            padding: 10px 20px;
+            background-color: var(--bleu);
+            text-align: center;
+            border-radius: 0 0 50px 50px;
+        }
+        .noel img{
+            border-radius: 50px 50px 0 0;
+            width: 100%;
+        }
+        footer {
+            font-family: Michella;
+            padding: 1rem 0;
+            background-color: rgb(104, 4, 4);
+            color: rgb(250, 239, 213);
+            font-size: 20px;
+            text-align: center;
+        }
+        footer h3{
+            font-family: "Josefin Sans", sans-serif;
+        }
+        
+        .reseau{
+            text-align: center;
+            padding-bottom: 1em;
+        }
+        .reseau a{
+            font-family: "Josefin Sans", sans-serif;
+            font-variant-caps: all-small-caps;
+            font-weight: 900;
+            text-decoration: none;
+            color: rgb(250, 239, 213);
+            padding: 0 2em;
+        }
+        .qg{
+            font-weight: bolder;
+            font-variant-caps: small-caps;
+        }
+
+        @media screen and (max-width: 768px) {
+            /* Remplace tous les display: flex par display: block */
+            
+            main,
+            .parent,
+            .fraterie {
+                display: block;
+            }
+            
+            /* Ajuste l'image de couverture pour qu'elle soit visible en entier */
+            body {
+                background-image: none;
+                background-color: var(--beige);
+                background-size: contain; /* L'image sera entièrement visible */
+                background-repeat: no-repeat;
+                background-position: top;
+                margin: 0;
+                padding: 0;
+                overflow-x: hidden;
+            }
+            nav {
+                position: fixed;
+                font-size: 7vw;
+                top: 0;
+                left: -100%;
+                width: 100%;
+                height: 100vh;
+                max-height: 100vh;
+                background-color: var(--beige);
+                color: black;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                transition: left 0.3s;
+              }
+              nav.active {
+                left: 0;
+              }
+            nav a{
+                background-color: var(--beige);
+                color: black;
+                width: 100%;
+            }
+            .menu-toggle {
+                display: block;
+                position: fixed;
+                height: 55px;
+                width: 55px;
+                top: 20px;
+                right: 20px;
+                background-color: var(--bleu);
+                border-radius: 100px;
+                color: var(--beige);
+                border: none;
+                font-size: 40px;
+                padding-top: 7px;
+                cursor: pointer;
+              }
+              .close-menu {
+                display: block;
+                position: absolute;
+                top: 20px;
+                right: 20px;
+                background: none;
+                border: none;
+                color: black;
+                font-size: 2rem;
+                cursor: pointer;
+              }
+              
+            main{
+                margin-top: 0;
+            }
+            .couv-famille{
+                display: block;
+            }
+            .couv-famille img{
+                width: 100%;
+            }
+            /* Ajuste les marges et le positionnement des sections */
+            .section-text {
+                width: 80%; /* Réduit la largeur pour s'adapter aux petits écrans */
+                margin: 5vh auto; /* Centre le contenu avec des marges adaptées */
+                padding: 10px;
+            }
+        
+            h1 {
+                font-size: 50px; /* Réduit la taille du titre */
+            }
+        
+            .section-text h2 {
+                font-size: 50px; /* Réduit la taille des sous-titres */
+            }
+        
+            .section-text h3 {
+                font-size: 100px; /* Réduit la taille des grands titres */
+            }
+        
+            p {
+                font-size: 18px; /* Texte plus petit pour la lisibilité */
+            }
+        
+            .parent p,
+            .fraterie p {
+                padding-left: 0;
+                padding-right: 0;
+            }
+
+            
+            .parent div,
+            .fraterie div {
+                width: 100%; /* Les images prennent toute la largeur disponible */
+                border-radius: 0; /* Supprime les bordures pour s'adapter aux petits écrans */
+            }
+        
+            .noel img {
+                width: 100%; /* Prend toute la largeur */
+                height: auto; /* Garde les proportions */
+            }
+            footer{
+                padding: 50px;
+            }
+           
+            .reseau ul{
+                padding: 0;
+                text-align: center;
+            }
+        
+        }
+        
