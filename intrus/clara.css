@@ -1,6 +1,6 @@
 
 .img-couv{
-    background-image: url(/img/clara/paresseux.jpg);
+    background-image: url(../img/clara/paresseux.jpg);
     background-size: cover;
     background-position: top;
     width: 70%; 
