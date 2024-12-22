@@ -309,6 +309,9 @@
                 width: 100%; /* Les images prennent toute la largeur disponible */
                 border-radius: 0; /* Supprime les bordures pour s'adapter aux petits écrans */
             }
+            .fraterie div{
+                height: 200px;
+            }
         
             .noel img {
                 width: 100%; /* Prend toute la largeur */
