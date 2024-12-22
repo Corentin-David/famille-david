@@ -195,5 +195,12 @@
               .menu a div{
                 margin: 0;
                 background-color: rgba(250, 239, 213, 0.384);
+                overflow: hidden;
+              }
+              h1{
+                position: relative; top: 10%;
+              }
+              h2, h3{
+                position: relative; top: 60%;
               }
         }
