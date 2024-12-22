@@ -1,7 +1,7 @@
 
 .img-couv{
-    background-image: url(img/val/tebé.jpg);
-    background-size: 200%;
+    background-image: url(../img/thomas/patulacci.png);
+    background-size: cover;
     background-position: center;
     width: 70%; 
 }
@@ -16,7 +16,7 @@ h1{
 }
 
     .detail img{
-        height: 750px;
+        height: 650px;
         padding: 25px 50px 0 0;
     }
 

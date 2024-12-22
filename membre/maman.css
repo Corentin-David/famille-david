@@ -8,7 +8,7 @@ h1{
     position: relative; top: 55%;
 }
 .img-couv{
-    background-image: url(/img/maman/couv.png);
+    background-image: url(../img/maman/couv.png);
     background-size: cover;
     background-position: center;
     width: 70%; 

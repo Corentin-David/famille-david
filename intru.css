@@ -13,7 +13,7 @@
     }*/
     @font-face {
         font-family: Michella;
-        src: url(/font/milchella.regular.ttf);
+        src: url(../font/milchella.regular.ttf);
       }
     :root{
         --rouge:rgb(104, 4, 4);

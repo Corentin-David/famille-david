@@ -1,25 +1,25 @@
-
 .img-couv{
-    background-image: url(/img/dona/couv.png);
+    background-image: url(../img/nanou/couv.png);
     background-size: cover;
     background-position: center;
     width: 70%; 
 }
-
 h1{
     font-size: 5vw;
-    position: relative; top: 60%;
+    position: relative; top: 62%;
 }
 .nom h3{
     font-size: 3vw;
-    position: relative; top: 60%;
+    position: relative; top: 62%;
 }
-
+/*FIN COUV*/
+    
     .detail img{
         height: 750px;
         padding: 25px 50px 0 0;
     }
-
+    
+    
     .passions img{
         height: 525px;
         margin-top: 25px;
@@ -40,5 +40,14 @@ h1{
     .balrog img{
         margin-top: 50px;
         width: 100%;
+    }
+    figcaption{
+        color: var(--beige);
+        font-family: Michella;
+        font-weight: 400;
+        font-size: 120%;
+        padding: 10px;
+        background-color: rgb(182, 162, 115);
+        text-align: center;
     }
     

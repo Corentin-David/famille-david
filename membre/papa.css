@@ -1,6 +1,6 @@
 
 .img-couv{
-    background-image: url(/img/papa/couv1.jpg);
+    background-image: url(../img/papa/couv1.jpg);
     background-size: cover;
     background-position: center;
     width: 70%; 

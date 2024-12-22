@@ -1,6 +1,6 @@
 
     .img-couv{
-        background-image: url(/img/maudé/couv.png);
+        background-image: url(../img/maudé/couv.png);
         background-size: cover;
         background-position: center;
         width: 70%; 
