@@ -10,11 +10,14 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Staatliches&display=swap" rel="stylesheet">
 
-
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
 <body>
     <header>
+        <button class="menu-toggle"><ion-icon name="menu-outline"></ion-icon></button> <!-- Bouton pour ouvrir le menu -->
         <nav>
+            <button class="close-menu">✖</button> <!-- Bouton pour fermer le menu -->
             <a href="../index.html">Le régiment</a>
             <a href="../membre.html">l'état-major</a>
             <a href="../compagnon.html">Notre Brigade de vigiles </a>
@@ -212,5 +215,7 @@ function showSlides(n) {
 }
 
 </script>
+<script src="nav.js"></script>
+
 </html>
    

@@ -25,6 +25,13 @@
         margin: 0;
     }
 
+    .menu-toggle {
+        display: none;
+      }
+      .close-menu {
+        display: none;
+      }
+
     nav {
         font-family: "Staatliches", sans-serif;
         font-style: normal;
@@ -33,7 +40,6 @@
         justify-content: center;
         align-items: center;
         background-color: var(--beige);
-
         position: fixed;
         top: 0;
         width: 100%;
@@ -74,8 +80,8 @@
     h1{
         font-family: "Staatliches", sans-serif;
         margin: 0;
-        font-size: 10vw;
-        height: 10vw;
+        font-size: 200px;
+        height: 200px;
         transition: all 0.3s;
     }
     h2{
@@ -83,7 +89,7 @@
         font-weight: normal;
         margin: 0;
         padding: 0;
-        font-size: 2vw;
+        font-size: 40px;
         transition: all 0.3s;
     }
     h3{
@@ -91,7 +97,7 @@
         font-weight: normal;
         margin: 0;
         padding: 0;
-        font-size: 1.5vw;
+        font-size: 30px;
         transition: all 0.3s;
     }
     p{
@@ -100,7 +106,7 @@
         margin-right: auto;
         width: 70%; 
         transition: all 0.3s;
-        font-size: 1.5vw;
+        font-size: 30px;
     }
     .grade{
         transition: scale 0.3s;
@@ -209,4 +215,120 @@
         height: 100vh;
         background-image: url(img/carla/couv.jpg);
         background-size: cover;
+    }
+
+
+    @media screen and (max-width: 768px) {
+
+        
+        
+        h1{
+            font-size: 50px;
+            height: inherit;
+        }
+        h2{
+            font-size: 20px;
+        }
+        h3{
+            font-size: 15px;
+        }
+        p{
+            font-size: 15px;
+            width: inherit;
+        }
+        #val{
+            display: flex;
+            flex-direction: column-reverse;
+            width: 100%;
+            height: 100vh;
+            margin-top: 0;
+        }
+        .val{
+            display: flex; /* Active flexbox */
+            flex-direction: column; /* Assure un empilement vertical des éléments */
+            justify-content: center; /* Centre verticalement */
+            position: relative;
+            width: 100%;
+            height: 50%;
+        }
+        .picval{
+            width: 100%;
+            height: 50%;
+        }
+        #chimene{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 100%;
+            margin-top: 0;
+        }
+        .chimene{
+            display: flex; /* Active flexbox */
+            flex-direction: column; /* Assure un empilement vertical des éléments */
+            justify-content: center; /* Centre verticalement */
+            position: relative;
+            width: 100%;
+            height: 50vh;
+        }
+        .picchimene{
+            width: 100%;
+            height: 50%;
+        }
+        #clara{
+            display: flex;
+            flex-direction: column-reverse;
+            width: 100%;
+            height: 100%;
+            margin-top: 0;
+        }
+        .clara{
+            display: flex; /* Active flexbox */
+            flex-direction: column; /* Assure un empilement vertical des éléments */
+            justify-content: center; /* Centre verticalement */
+            position: relative;
+            width: 100%;
+            height: 50vh;
+        }
+        .picclara{
+            width: 100%;
+            height: 50%;
+        }
+        #thomas{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 100%;
+            margin-top: 0;
+        }
+        .thomas{
+            display: flex; /* Active flexbox */
+            flex-direction: column; /* Assure un empilement vertical des éléments */
+            justify-content: center; /* Centre verticalement */
+            position: relative;
+            width: 100%;
+            height: 50vh;
+        }
+        .picthomas{
+            width: 100%;
+            height: 50%;
+        }
+        #carla{
+            display: flex;
+            flex-direction: column-reverse;
+            width: 100%;
+            height: 100%;
+            margin-top: 0;
+        }
+        .carla{
+            display: flex; /* Active flexbox */
+            flex-direction: column; /* Assure un empilement vertical des éléments */
+            justify-content: center; /* Centre verticalement */
+            position: relative;
+            width: 100%;
+            height: 50vh;
+        }
+        .piccarla{
+            width: 100%;
+            height: 50%;
+        }
     }

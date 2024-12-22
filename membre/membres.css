@@ -31,7 +31,12 @@
         overflow-x: hidden;
         background-color: var(--beige);
     }
-
+    .menu-toggle {
+        display: none;
+      }
+      .close-menu {
+        display: none;
+      }
     nav {
         background-color: var(--beige);
         font-family: "Staatliches", sans-serif;
@@ -347,6 +352,61 @@ footer h3{
         overflow-x: hidden;
     }
 
+    nav {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100vh;
+        max-height: 100vh;
+        background-color: var(--beige);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: left 0.3s;
+      }
+      nav.active {
+        left: 0;
+        background-color: var(--beige);
+        z-index: 3;
+      }
+    nav a{
+        background-color: var(--beige);
+        font-size: 30px;
+        color: black;
+        margin: 32px 0;
+        padding: 0;
+    }
+    .menu-toggle {
+        display: block;
+        position: fixed;
+        height: 55px;
+        width: 55px;
+        top: 20px;
+        right: 20px;
+        background-color: var(--bleu);
+        border-radius: 100px;
+        color: var(--beige);
+        border: none;
+        font-size: 40px;
+        padding-top: 7px;
+        cursor: pointer;
+        z-index: 2;
+      }
+      .close-menu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        background: none;
+        border: none;
+        color: black;
+        font-size: 2rem;
+        cursor: pointer;
+        z-index: 3;
+      }
+      
     .haut-couv,
     .bas-couv,
     .contenu,
@@ -359,38 +419,32 @@ footer h3{
         overflow: hidden;
     }
     .haut-couv {
+        height: 50vh;
         flex-direction: column;
         text-align: center;
     }
     .img-couv {
         width: 100%;
-        height: 60vh;
-    }
-    
-    nav {
-        font-size: 5vw;
-        opacity: 1;
+        max-height: 50vh;
     }
     .nom{
-        margin: 0;
-        position: absolute;top: 80vh;left: 60vw;
-        width: 25%;
+        position: absolute;top: 55vh;
+        left: 35%;
         text-align: center;
     } 
     .nom h1{
         text-align: center;
-
     }
     
     .bas-couv {
+        top: 50px;
         font-size: 16px;
-        width: 40%; 
-        margin-left: 25px;
-        margin-top: 10%;
+        margin: 0;
+        max-width: 70%;
+        margin: 100px auto;
     }
     .bas-couv p{
         text-align: justify;
-        margin: auto;
     }
    
     .detail img{
@@ -458,6 +512,13 @@ footer h3{
         padding: 50px;
     }
    
+    .reseau{
+        display: flex;
+        flex-direction: column;
+    }
+    .reseau a{
+        padding: 10px 0;
+    }
     .reseau ul{
         padding: 0;
         text-align: center;
