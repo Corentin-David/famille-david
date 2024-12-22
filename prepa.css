@@ -140,7 +140,13 @@
                 cursor: pointer;
               }
               
-            main{
-                margin-top: 0;
+              main {
+                display: flex;
+                flex-direction: column;
+                height: 100vh;
+                background-color: rgba(250, 239, 213, 0.692);
+                text-align: center;
+                align-items: center;
+                justify-content: center;
             }
         }
