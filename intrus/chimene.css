@@ -1,6 +1,6 @@
 
 .img-couv{
-    background-image: url(/img/chimene/couv3.jpg);
+    background-image: url(../img/chimene/couv3.jpg);
     background-size: cover;
     background-position: center;
     width: 70%; 
